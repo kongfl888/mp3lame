@@ -25,6 +25,10 @@
 #include <sys/types.h>
 #include "lame.h"
 
+#ifndef O_BINARY
+ #define O_BINARY 0x10000
+#endif
+
 #if defined(__cplusplus)
 extern "C" {
 #endif

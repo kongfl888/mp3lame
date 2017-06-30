@@ -96,7 +96,7 @@ AC_CHECK_HEADERS( \
 		 sys/soundcard.h \
 		 sys/time.h \
 		 unistd.h \
-		 xmmintrin.h \
+		 $check_xmmintrin \
 		 linux/soundcard.h)
 
 dnl Checks for typedefs, structures, and compiler characteristics.
@@ -667,6 +667,15 @@ powerpc)
 *)
 	CPUTYPE="no"
 	;;
+esac
+
+case $host_cpu in
+powerpc*|i686*|i386*)
+    check_xmmintrin=
+    ;;
+)
+    check_xmmintrin="xmmintrin.h"
+    ;;
 esac
 
 # which vector code do we support to build on this machine?
