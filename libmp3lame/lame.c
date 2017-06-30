@@ -1328,7 +1328,7 @@ lame_print_config(const lame_global_flags * gfp)
     double const out_samplerate = cfg->samplerate_out;
     double const in_samplerate = cfg->samplerate_in;
 
-    MSGF(gfc, "LAME %s %s (%s)\n", get_lame_version(), get_lame_os_bitness(), get_lame_url());
+    MSGF(gfc, "LAME %s %s (%s)\n", get_lame_version(), get_lame_os_bitness(), get_lame_edition());
 
 #if (LAME_ALPHA_VERSION)
     MSGF(gfc, "warning: alpha versions should be used for testing only\n");

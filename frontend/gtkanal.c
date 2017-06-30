@@ -1237,7 +1237,7 @@ text_window(GtkWidget * widget, gpointer data)
         gtk_window_set_title(GTK_WINDOW(textwindow), "About");
         gtk_widget_set_usize(box, 350, 260);
 
-        sprintf(text, "LAME version %s \n%s\n\n", get_lame_version(), get_lame_url());
+        sprintf(text, "LAME version %s (%s) \n%s\n\n", get_lame_version(), get_lame_edition(), get_lame_url());
         gtk_text_insert(GTK_TEXT(box), NULL, NULL, NULL, text, -1);
 
         sprintf(text, "psycho-acoustic model:  GPSYCHO version %s\n", get_psy_version());

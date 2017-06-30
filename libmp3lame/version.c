@@ -122,7 +122,7 @@ get_lame_very_short_version(void)
 #elif LAME_BETA_VERSION
 #define P "b"
 #elif LAME_RELEASE_VERSION && (LAME_PATCH_VERSION > 0)
-#define P "r"
+#define P "k"
 #else
 #define P ""
 #endif
@@ -192,6 +192,13 @@ get_lame_url(void)
     return str;
 }
 
+const char *
+get_lame_edition(void)
+{
+    static /*@observer@ */  const char *const str = VERSION_E;
+
+    return str;
+}
 
 /*! Get the numerical representation of the version. */
 /*!

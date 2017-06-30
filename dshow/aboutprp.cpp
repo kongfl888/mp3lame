@@ -123,7 +123,7 @@ HRESULT CMAEAbout::OnActivate(void)
     CHAR strbuf[250];
 #pragma warning(push)
 #pragma warning(disable: 4995)
-    sprintf(strbuf, "LAME Encoder Version %s", get_lame_version());
+    sprintf(strbuf, "LAME Encoder Version %s (%s)", get_lame_version(), get_lame_edition());
     SendDlgItemMessage(m_hwnd, IDC_LAME_VER, WM_SETTEXT, 0, (LPARAM)strbuf);
 
     sprintf(strbuf, "LAME Project Homepage: %s", get_lame_url());
