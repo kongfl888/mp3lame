@@ -404,6 +404,7 @@ print_license(FILE * const fp)
 {                       /* print version & license */
     lame_version_print(fp);
     fprintf(fp,
+            "Copyright (c) 2017 by kongfl888\n"
             "Copyright (c) 1999-2011 by The LAME Project\n"
             "Copyright (c) 1999,2000,2001 by Mark Taylor\n"
             "Copyright (c) 1998 by Michael Cheng\n"
