@@ -424,7 +424,8 @@ print_license(FILE * const fp)
             "\n"
             "You should have received a copy of the GNU Library General Public\n"
             "License along with this program. If not, see\n"
-            "<http://www.gnu.org/licenses/>.\n");
+            "<http://www.gnu.org/licenses/>.\n"
+            "<http://lame.sourceforge.net/>.\n");
     return 0;
 }
 
