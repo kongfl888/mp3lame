@@ -801,8 +801,8 @@ PutLameVBR(lame_global_flags const *gfp, size_t nMusicLength, uint8_t * pbtStrea
     CreateI4(&pbtStreamBuffer[nBytesWritten], nQuality);
     nBytesWritten += 4;
 
-    strncpy((char *) &pbtStreamBuffer[nBytesWritten], szVersion, 9);
-    nBytesWritten += 9;
+    strncpy((char *) &pbtStreamBuffer[nBytesWritten], szVersion, strlen(szVersion));
+    nBytesWritten += (strlen(szVersion));
 
     pbtStreamBuffer[nBytesWritten] = nRevMethod;
     nBytesWritten++;
