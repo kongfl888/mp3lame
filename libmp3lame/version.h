@@ -47,6 +47,8 @@
 # define PSY_ALPHA_VERSION       0 /* Set number if this is an alpha version, otherwise zero */
 # define PSY_BETA_VERSION        0 /* Set number if this is a beta version, otherwise zero */
 
+#define VERSION_E "Airlltools"
+
 #if LAME_ALPHA_VERSION
 #define LAME_PATCH_LEVEL_STRING " alpha " STR(LAME_PATCH_VERSION)
 #endif

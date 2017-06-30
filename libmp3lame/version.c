@@ -128,9 +128,9 @@ get_lame_very_short_version(void)
 #endif
     static /*@observer@ */ const char *const str =
 #if (LAME_PATCH_VERSION > 0)
-      "LAME" STR(LAME_MAJOR_VERSION) "." STR(LAME_MINOR_VERSION) P STR(LAME_PATCH_VERSION)
+      "LAME" STR(LAME_MAJOR_VERSION) "." STR(LAME_MINOR_VERSION) P STR(LAME_PATCH_VERSION) VERSION_E
 #else
-      "LAME" STR(LAME_MAJOR_VERSION) "." STR(LAME_MINOR_VERSION) P
+      "LAME" STR(LAME_MAJOR_VERSION) "." STR(LAME_MINOR_VERSION) P VERSION_E
 #endif
       ;
     return str;
@@ -149,7 +149,7 @@ get_lame_tag_encoder_short_version(void)
 {
     static /*@observer@ */ const char *const str =
             /* FIXME: new scheme / new version counting / drop versioning here ? */
-    "LAME" STR(LAME_MAJOR_VERSION) "." STR(LAME_MINOR_VERSION) P
+    "LAME" STR(LAME_MAJOR_VERSION) "." STR(LAME_MINOR_VERSION) " " VERSION_E
     ;
     return str;
 }
@@ -192,6 +192,13 @@ get_lame_url(void)
     return str;
 }
 
+const char *
+get_lame_edition(void)
+{
+    static const char *const str = "Airlltools";
+
+    return str;
+}
 
 /*! Get the numerical representation of the version. */
 /*!
