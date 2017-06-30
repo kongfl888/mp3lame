@@ -12,6 +12,7 @@
 *.h.c
 *.ilk
 *.lib
+*.lo
 *.pc
 *.pdb
 *.so
@@ -33,3 +34,9 @@
 /lcov/
 /src
 /mapfile
+/config.log
+*/.deps/*
+conftest.c
+conftest.err
+confdefs.h
+config.status
